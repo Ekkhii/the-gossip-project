@@ -17,7 +17,7 @@
 
 ------------
 
-### Utilisation du programme the-movie-database
+### Utilisation du programme the-gossip-project
 
 **https://secret-anchorage-40009.herokuapp.com/**
 <p>Ici c'est Gossip Land ! Créer tes gossips, commente les ! Tu peux les modifier ou les supprimer !</p>
