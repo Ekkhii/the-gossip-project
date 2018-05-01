@@ -10,7 +10,7 @@
 
 ### Arborescence du projet
 
-- Dossier **the-gossip-project** : dossier pour la réalisation d'un site qui liste des films 
+- Dossier **the-gossip-project** : dossier pour la réalisation d'un site de gossip.
 
 
 - Fichier **README.md** : Retrouvez ici toutes les informations necessaire à l'utilisation des apps
@@ -19,8 +19,8 @@
 
 ### Utilisation du programme the-movie-database
 
-**https://tranquil-chamber-76581.herokuapp.com/**
-<p>Tu trouveras une liste des films que j'aime :)</p>
+**https://secret-anchorage-40009.herokuapp.com/**
+<p>Ici c'est Gossip Land ! Créer tes gossips, commente les ! Tu peux les modifier ou les supprimer !</p>
 
 
 ------------
