@@ -1,0 +1,50 @@
+<div class="page container">
+
+  <div class="row">
+    <h1 class="title">
+      Gossip n° <%= @gossip.id %>
+    </h1>
+    <p class="col-lg-6">👤 <strong> Pseudo </strong><br> <%= @anonymous_author %> </p>
+    <p class="col-lg-6">🙊 <strong>Gossip </strong><br><%= @content %></p>
+  </div>
+
+  <div class="row">
+  <h2 class="title">Tous les commentaires(<%= @gossip.comments.count %>)</h2>
+    <% @gossip.comments.each do |comment| %>
+    	<div class="col-lg-3">
+        <p class="small_text">
+      		Commentaire N° : <%= comment.id %>
+      	</p>
+        <p>
+          <strong>👤 Pseudo</strong> :
+          <%= comment.anonymous_commentor %>
+        </p>
+       
+        <p>
+          <strong>🙉 Commentaire</strong> : 
+          <%= comment.body %>
+        </p>
+        <a href="/gossips/<%= @gossip.id %>/comments/<%= comment.id %>/edit" type="button" class="btn btn-primary">Editer</a>
+      </div>
+    <% end %>
+  </div>
+
+
+  <div class="row">
+    <h2 class="title">Tu veux ajouter un commentaire ?</h2>
+    <p class="text">Toi aussi donne nous ton avis !</p>
+         <%= form_with(model: [ @gossip, @gossip.comments.build ], local: true) do |form| %>
+        <p>
+          <%= form.label :anonymous_commentor %><br>
+          <%= form.text_field :anonymous_commentor %>
+        </p>
+        <p>
+          <%= form.label :body %><br>
+          <%= form.text_area :body %>
+        </p>
+        <p>
+          <%= form.submit %>
+        </p>
+      <% end %>
+  </div>
+</div>

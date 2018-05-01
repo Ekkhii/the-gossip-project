@@ -1,0 +1,24 @@
+<div class="container-fluid page">
+	<div class="row">
+		<h1 class="title">TOUS LES GOSSIPS</h1>
+
+		<% @gossips.each do |gossip| %>
+		<div class="col-lg-3">
+			<p>
+				<strong>👤 Pseudo</strong>
+				<br>
+				<%= gossip.anonymous_author %> 
+			</p>
+			<p>
+				<strong>🙈 Gossip</strong>
+				<br>
+				<%= gossip.content %> 
+			</p>
+			<a href="/gossips/<%= gossip.id %>/edit" type="button" class="btn btn-primary">Editer</a>
+			<a href="<%= gossip_path(gossip.id) %>" type="button" class="btn btn-primary">Voir le gossip</a>
+			<p class="small_text"> Commentaires :
+			<%= gossip.comments.count %> </p>
+		</div>
+		<% end %>
+	</div>
+</div>

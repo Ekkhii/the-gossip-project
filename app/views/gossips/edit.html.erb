@@ -1,0 +1,19 @@
+<div class="page">
+	<h1 class="title">Tu veux modifier ce gossip ? </h1>
+
+
+	<%= form_for @gossip do |f| %>
+		<p> 
+			<strong>👤 Pseudo</strong><br>
+	  		<%= f.text_field :anonymous_author %>
+	  	</p>
+	  	<p>
+	  		<strong>🙉 Commentaire</strong><br>
+	 		<%= f.text_area :content, size: "40x12" %>
+	 	</p>
+	  <%= f.submit "Modifier" %>
+	<% end %>
+
+	<%= link_to 'Supprimer le gossip', @gossip, method: :delete %>
+
+</div>

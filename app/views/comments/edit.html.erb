@@ -1,0 +1,24 @@
+<div class="page">
+	<h1 class="title">Tu veux modifier ce commentaire ? </h1>
+
+
+	<%= form_for @comment, url:{action: "update"} do |f| %>
+		<p>
+			<strong>👤 Pseudo</strong><br>
+			<%= f.text_field :anonymous_commentor %>
+			<br>
+		</p>
+		<p>
+			<strong>🙉 Commentaire</strong><br>
+			<%= f.text_area :body, size: "40x12" %>
+			<br>
+		</p>
+		<%= f.submit "Envoyer" %>
+		<% end %>
+
+	<p>
+	  <%= link_to 'Supprimer le commentaire', [@comment.gossip, @comment],
+	               method: :delete%>
+	</p>
+
+</div>

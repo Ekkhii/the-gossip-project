@@ -1,0 +1,35 @@
+// Place all the styles related to the gossips controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.page{
+	padding-top: 50px;
+	text-align: center;
+}
+
+.title{
+	font-size: 3em;
+}
+
+.row1{
+	border: 2px solid black;
+	border-radius: 25px;
+	padding-bottom: 25px;
+	margin-bottom: 50px;
+}
+
+.small_text{
+	font-size: 0.8em;
+}
+
+.col-lg-3{
+	border: 2px solid black;
+	border-radius: 25px;
+
+	padding: 5px;
+}
+
+.text{
+	font-size: 2em;
+}

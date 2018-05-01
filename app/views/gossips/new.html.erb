@@ -1,0 +1,11 @@
+
+<div class="page">
+	<p class="title">Quel est ton gossip ?</p>
+	<%= form_tag "/gossips", method: "post" do %>
+		<p>👤 Pseudo :
+	    <input type="text" name="anonymous_author" /></p><br/>
+	    <p>🙈 Gossip :
+	    <input type="text_area" name="content" size="60x12" /></p><br/>
+	    <input type="submit" value="Envoyer" class="btn btn-danger" />
+   <% end %>
+</div>
